@@ -127,3 +127,31 @@ def get_orders_by_customer(customer_id: str):
     customer_orders = [o for o in orders if o.customer_id == customer_id]
     return customer_orders
 
+@app.get("/customers/{customer_id}/latest-order")
+def get_customer_with_latest_order(customer_id: str):
+    # Find the customer
+    customer = next((c for c in customers if c.id == customer_id), None)
+    if not customer:
+        raise HTTPException(status_code=404, detail="Customer not found")
+
+    # Find orders for the customer
+    customer_orders = [o for o in orders if o.customer_id == customer_id]
+    if not customer_orders:
+        return {
+            "customer": customer,
+            "latest_order": None,
+            "message": "No orders found for this customer"
+        }
+
+    # Sort by date and return the latest one
+    latest_order = sorted(customer_orders, key=lambda o: o.order_date, reverse=True)[0]
+
+    return {
+        "customer": customer,
+        "latest_order": latest_order
+    }
+
+@app.get("/customers/{customer_id}/orders", response_model=List[Order])
+def get_orders_by_customer(customer_id: str):
+    customer_orders = [o for o in orders if o.customer_id == customer_id]
+    return customer_orders
