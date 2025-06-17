@@ -1,0 +1,57 @@
+[
+    {
+      "id": "1",
+      "name": "Peter Parker",
+      "address": "20 Ingram Street, Queens, NY",
+      "email": "spidey@dailybugle.com",
+      "most_ordered_item": "Web-Wrapped Meatball Pizza",
+      "first_order_date": "2023-01-01",
+      "last_order_date": "2024-06-30"
+    },
+    {
+      "id": "2",
+      "name": "Tony Stark",
+      "address": "10880 Malibu Point, California",
+      "email": "ironman@starkindustries.com",
+      "most_ordered_item": "Arc Reactor Deep Dish",
+      "first_order_date": "2022-03-15",
+      "last_order_date": "2024-06-10"
+    },
+    {
+      "id": "3",
+      "name": "Gandalf the Grey",
+      "address": "Middle-earth, Bag End",
+      "email": "gandalf@valinor.org",
+      "most_ordered_item": "White Wizard Veggie",
+      "first_order_date": "2021-09-10",
+      "last_order_date": "2024-04-25"
+    },
+    {
+      "id": "4",
+      "name": "Bruce Wayne",
+      "address": "1007 Mountain Drive, Gotham",
+      "email": "batman@wayneenterprises.com",
+      "most_ordered_item": "Gotham Night Cheese",
+      "first_order_date": "2020-05-15",
+      "last_order_date": "2024-06-15"
+    },
+    {
+      "id": "5",
+      "name": "Barry Allen",
+      "address": "3938 Keystone Avenue, Central City",
+      "email": "flash@ccpd.gov",
+      "most_ordered_item": "Speed Force Pepperoni Blitz",
+      "first_order_date": "2023-03-01",
+      "last_order_date": "2024-06-28"
+    },
+    {
+      "id": "6",
+      "name": "Harley Quinn",
+      "address": "Arkham Asylum, Gotham",
+      "email": "hq@puddinmail.com",
+      "most_ordered_item": "Chaos BBQ Bacon Bomb",
+      "first_order_date": "2022-10-31",
+      "last_order_date": "2024-07-01"
+    }
+  ]
+  
