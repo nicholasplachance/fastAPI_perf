@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Byte-compiled / cache / logs
+*.log
+*.tmp
+*.bak
+
+# Mac
+.DS_Store
+
+# Test artifacts
+htmlcov/
+coverage.xml
+.pytest_cache/
+.cache/
+
+# Flask/FastAPI
+instance/
+*.db
+
+# Virtual environments
+venv/
+.env/
+.venv/
+pip-wheel-metadata/
+
+# System
+Thumbs.db
