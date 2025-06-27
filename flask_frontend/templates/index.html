@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>All Customers</h2>
+<ul>
+    {% for customer in customers %}
+    <li>
+        <a href="{{ url_for('view_customer', customer_id=customer.id) }}">{{ customer.name }}</a>
+        from {{ customer.town }}, {{ customer.multiverse }}
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{{ url_for('create_order') }}">Place New Order</a>
+{% endblock %}

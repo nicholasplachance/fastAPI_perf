@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>{{ customer.name }}</h2>
+<p><strong>Email:</strong> {{ customer.email }}</p>
+<p><strong>Location:</strong> {{ customer.town }}, {{ customer.multiverse }}</p>
+<p><strong>Most Ordered Item:</strong> {{ customer.most_ordered_item }}</p>
+
+<h3>Order History</h3>
+<ul>
+    {% for order in orders %}
+    <li>{{ order.item }} x{{ order.quantity }} on {{ order.order_date }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('index') }}">← Back</a>
+{% endblock %}

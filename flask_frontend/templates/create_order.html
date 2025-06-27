@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Create New Order</h2>
+<form method="post">
+    <p><input name="name" placeholder="Name" required></p>
+    <p><input name="email" placeholder="Email" required></p>
+    <p><input name="address" placeholder="Street Address" required></p>
+    <p><input name="town" placeholder="Town" required></p>
+    <p><input name="multiverse" placeholder="Multiverse" required></p>
+    <p><input name="item" placeholder="Pizza Item" required></p>
+    <p><input name="quantity" type="number" min="1" value="1" required></p>
+    <button type="submit">Submit</button>
+</form>
+<a href="{{ url_for('index') }}">← Back</a>
+{% endblock %}
